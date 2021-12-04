@@ -8,8 +8,8 @@ data
 	arg = String.to_integer(arg)
 	case command do
 		"forward" -> {x+arg, y+aim*arg, aim}
-		"down" -> {x, y+arg, aim+arg}
-		"up" -> {x, y-arg, aim-arg}
+		"down" -> {x, y, aim+arg}
+		"up" -> {x, y, aim-arg}
 		_ -> "Error unknown encountered"
 	end
 end)
